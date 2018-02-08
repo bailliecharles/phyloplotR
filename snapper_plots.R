@@ -152,7 +152,7 @@ myCols = c("#4F5F69","#245790", "#793d8c" ,"#C43541" ,"#8C234D", "#2B2373" ,	# c
 twee4 = ggtree(twee3, color="#4F5F69", size=1.5) %<+% cols3 + xlim(0,1.4) + 	# plot, attach data, and size						
 		geom_tiplab(aes(label=paste0('plain(', V2, ')~italic(', V3, ')~', V4)), parse=T, cex=2.5, offset=0.03, color="black")+ #names
 			scale_color_manual(values=myCols) # color branches
-
+# The above plots a tree with grey branches. To coor the branches by clade change color="#45F69" to  aes(color=group)
 
 # can also add bars by family 
 twee4+
